@@ -1,8 +1,6 @@
 from flask import Flask, request, jsonify, redirect, render_template
 from datetime import datetime
 import random
-
-
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 
 app = Flask(__name__)
