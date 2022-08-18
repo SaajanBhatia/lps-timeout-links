@@ -1,5 +1,5 @@
 # start by pulling the python image
-FROM python:3.9-buster
+FROM python:3.9.13-buster
 
 # copy the requirements file into the image
 COPY ./requirements.txt /app/requirements.txt
