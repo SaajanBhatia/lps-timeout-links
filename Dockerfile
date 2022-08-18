@@ -11,7 +11,7 @@ WORKDIR /app
 RUN pip install --upgrade pip
 
 # expose port
-EXPOSE 5052
+EXPOSE 5053
 
 # install the dependencies and packages in the requirements file
 RUN pip install -r requirements.txt
