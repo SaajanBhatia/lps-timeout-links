@@ -69,6 +69,6 @@ def verifyUser():
 if __name__ == "__main__":
     app.run(
         debug=True,
-        host='0.0.0.0',
+        host='172.20.0.2',
         port=5053
     )
