@@ -2,3 +2,4 @@ cryptography==36.0.1
 Flask
 DateTime==4.3
 itsdangerous==1.1.0
+markupsafe==2.0.1
