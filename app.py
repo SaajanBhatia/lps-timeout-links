@@ -19,7 +19,7 @@ def index():
 ## Admin Panel
 @app.route('/admin/<pin>')
 def admin(pin):
-    if (int(pin) != ADMIN_PIN):
+    if (str(pin) != ADMIN_PIN):
         return jsonify({
             "err" : "access denied",
             "success" : False
