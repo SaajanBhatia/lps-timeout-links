@@ -1,15 +1,15 @@
 from flask import Flask, request, jsonify, redirect, render_template
-from datetime import datetime
-import random
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
+from datetime import datetime
+import os, random, secrets
 
 app = Flask(__name__)
 
 HIDDEN_URL = "https://chat.whatsapp.com/FKh5G5avaXf47ljKhTYFoF"
-ADMIN_PIN = 3131
+ADMIN_PIN = os.environ['ADMIN_PIN']
 TIME_FORMAT = '%H:%M:%S'
-SUBDOMAIN = "lps.ssbhatia.co.uk"
-SECRET_KEY = 'F514D4FC238D262587B1F6B6811C3'
+SUBDOMAIN = os.environ['SUBDOMAIN']
+SECRET_KEY = secrets.token_urlsafe(16)  
 
 
 ## Admin Panel

@@ -80,7 +80,7 @@
                 success: function(res) {
                     if (res.success) {
                         $('#error-msg').hide()
-                        window.location.replace('https://www.google.co.uk')
+                        window.location.replace(res.url)
                     } else {
                         $('#error-msg').show()
                     }
