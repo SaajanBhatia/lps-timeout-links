@@ -12,6 +12,10 @@ SUBDOMAIN = os.environ['SUBDOMAIN']
 SECRET_KEY = secrets.token_urlsafe(16)  
 
 
+@app.route('/')
+def index():
+    return render_template('index.html')
+
 ## Admin Panel
 @app.route('/admin/<pin>')
 def admin(pin):
